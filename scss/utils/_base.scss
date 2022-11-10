@@ -1,0 +1,44 @@
+:root {
+    --priamary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --hero-footer-text-color: #FFFFFF;
+    --bacground-priamary: #FFFFFF;
+    --bacground-color-team-button-list: #F5F4FA;
+    --bacground-footer-color: #2F303A;
+    --border-color: #2196F3;
+
+}
+
+body {
+    background-color: var(--bacground-priamary);
+    color: var(--priamary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+}

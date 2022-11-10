@@ -1,0 +1,45 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.button {
+    color: var(--hero-footer-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
