@@ -2,10 +2,16 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    @include for-phone-only{
+        flex-wrap: wrap;
+    }
 }
 
 .customers__item {
     width: calc((100% - 60px) / 3);
+    @include for-phone-only{
+        width: calc((100% - 30px) / 2);
+    }
 }
 
 .customers__link {

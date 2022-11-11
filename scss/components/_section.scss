@@ -1,6 +1,10 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    @include for-phone-only{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .section__title {

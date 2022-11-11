@@ -1,3 +1,9 @@
+.works{
+    @include for-phone-only{
+        display: none;
+    }
+}
+
 .works-list {
     display: flex;
     flex-wrap: wrap;

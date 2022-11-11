@@ -4,6 +4,9 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @include for-phone-only{
+        width: auto;
+    }
 }
 
 .list {
@@ -42,4 +45,7 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    @include for-phone-only {
+        padding: 16px 0;
+    }
 }
