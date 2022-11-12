@@ -1,10 +1,8 @@
 .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: #2F303A;
     text-align: center;
-    @include for-phone-only{
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
     @include for-desktop-up{
         padding-top: 200px;
         padding-bottom: 200px;
@@ -20,11 +18,17 @@
     background-repeat: no-repeat;
     background-position: center;
     @include for-phone-only{
-        max-width: 480px;
+        width: 480px;
         height: 400px;
     }
+
+    @include for-tablet-portrait-up {
+        width: 768px;
+        height: 400px;
+    }
+
     @include for-desktop-up{
-        max-width: 1600px;
+        width: 1600px;
         height: 600px;
     }
 }
@@ -35,11 +39,21 @@
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     @include for-phone-only {
         font-size: 26px;
         line-height: 1.62;
         text-align: center;
     }
+
+    @include for-tablet-portrait-up {
+        margin-left: 204px;
+        margin-right: 204px;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+    }
+
     @include for-desktop-up{
         margin-left: 237px;
         margin-right: 237px;

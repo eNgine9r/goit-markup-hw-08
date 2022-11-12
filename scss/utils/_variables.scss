@@ -1,11 +1,16 @@
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     @include for-phone-only{
-        width: 100%;
+        width: 480px;
+    }
+    @include for-tablet-portrait-up {
+        width: 768px;
+    }
+    @include for-desktop-up {
+        width: 1200px;
     }
 }
 
@@ -22,11 +27,11 @@
 }
 
 .primary {
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 216px;
+    padding: 10px 24px;
+    min-width: 200px;
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     font-weight: 700;
     font-family: inherit;
     font-size: 16px;
@@ -34,6 +39,12 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    @include for-desktop-up {
+        padding: 10px 32px;
+        min-width: 216px;
+    }
+
 }
 
 .logo {
@@ -45,6 +56,12 @@
     @include for-phone-only {
         padding: 16px 0;
     }
+
+    @include for-tablet-portrait-up {
+        padding: 26px 0;
+        margin-right: 87px;
+    }
+
     @include for-desktop-up{
         padding-top: 24px;
         padding-bottom: 25px;
