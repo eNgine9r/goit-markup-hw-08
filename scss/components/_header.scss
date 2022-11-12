@@ -8,11 +8,10 @@
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
-		@include for-phone-only {
-				display: block;
-			}
+    @include for-desktop-up{
+        display: flex;
+        align-items: center;
+    }
 }
 
 
@@ -22,13 +21,17 @@
 
 .site-nav {
     display: flex;
+    @include for-phone-only {
+		justify-content: space-between;
+        align-items: center;
+	}
 }
 
 .site-nav__list{
 	display: flex;
 	@include for-phone-only {
-			display: none;
-		}
+		display: none;
+	}
 }
 
 .site-nav__item {
@@ -83,9 +86,9 @@
 .header-address {
     display: flex;
     margin-left: auto;
-		@include for-phone-only {
-			display: none;
-		}
+	@include for-phone-only {
+		display: none;
+	}
 }
 
 .header-address__item {

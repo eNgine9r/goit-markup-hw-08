@@ -21,13 +21,15 @@
     <header class="header">
       <div class="container header__container">
         <nav class="site-nav">
-          <a href="/" class="logo"><span class="logo__text">Web</span>Studio</a>
-          <button type="button" class="mobile_button">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-menu_40px"></use>
-              <use href="./images/icons.svg#icon-close_40px"></use>
-            </svg>
-          </button>
+          <a href="#" class="logo"><span class="logo__text">Web</span>Studio</a>
+          <div class="mobile-menu">
+              <button type="button" class="mobile-button is-open">
+                <svg width="40" height="40" aria-label="Перемикач меню">
+                  <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+                  <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+                </svg>
+              </button>
+          </div>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>

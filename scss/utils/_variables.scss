@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     @include for-phone-only{
-        width: auto;
+        width: 100%;
     }
 }
 
@@ -37,9 +37,6 @@
 }
 
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
     color: #000000;
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -48,4 +45,11 @@
     @include for-phone-only {
         padding: 16px 0;
     }
+    @include for-desktop-up{
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }
 }
+
+

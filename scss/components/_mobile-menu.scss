@@ -1,0 +1,28 @@
+.mobile-menu{
+    @include for-desktop-up{
+        display: none;
+    }
+}
+
+.mobile-button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.mobile-menu{
+    .icon-cross{
+        display: none;
+    }
+    .icon-menu{
+    }
+}
+
+.mobile-button.is-open .icon-cross{
+    display: block;
+}
+
+.mobile-button.is-open .icon-menu{
+    display: none;
+}
