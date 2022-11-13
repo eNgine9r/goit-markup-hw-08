@@ -1,10 +1,8 @@
 .header {
-    display: block;
-    border-bottom: 1px solid #ECECEC;
-	@include for-phone-only {
-		border-bottom: none;
+    @include for-desktop-up{
+        display: block;
+        border-bottom: 1px solid #ECECEC;
 	}
-    
 }
 
 .header__container {
