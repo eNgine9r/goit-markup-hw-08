@@ -22,17 +22,46 @@
       <div class="container header__container">
         <nav class="site-nav">
           <a href="#" class="logo"><span class="logo__text">Web</span>Studio</a>
-          <button class="mobile-menu__button-open js-open-menu" type="button">
-            <svg width="40" height="40" aria-label="Перемикач меню">
-              <use href="./images/icons.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
-          <div class="mobile-menu js-menu-container">
+          <div class="mobile-menu">
+            <button class="mobile-menu__menu-open js-open-menu" type="button">
+              <svg width="40" height="40" aria-label="Перемикач меню">
+                <use href="./images/icons.svg#icon-menu_40px"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu__menu-close js-menu-container">
               <button type="button" class="mobile-menu__button-close js-close-menu">
                 <svg width="40" height="40" aria-label="Перемикач меню">
                   <use href="./images/icons.svg#icon-close_40px"></use>
                 </svg>
               </button>
+              <ul class="mobile-nav__list list">
+                <li class="mobile-nav__item">
+                  <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">Студія</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="#" class="mobile-nav__link">Контакти</a>
+                </li>
+              </ul>
+              <ul class="mobile-menu-address list">
+                <li class="mobile-menu-address__item">
+                  <a href="tel:+380961111111" class="mobile-menu-address__link">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu-address__item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu-address__link">
+                    info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mobile-menu-social list">
+                <li class="mobile-menu-social__item"> <a href="#" class="mobile-menu-social__link">Instagram</a><span class="line">|</span></li>
+                <li class="mobile-menu-social__item"> <a href="#" class="mobile-menu-social__link">Twitter</a><span class="line">|</span></li>
+                <li class="mobile-menu-social__item"> <a href="#" class="mobile-menu-social__link">Facebook</a><span class="line">|</span></li>
+                <li class="mobile-menu-social__item"> <a href="#" class="mobile-menu-social__link">Linkedin</a></li>
+              </ul>
+            </div>
           </div>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
@@ -424,7 +453,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer-logo-address">
           <a href="/" class="logo footer__logo"><span class="logo__text">Web</span>Studio</a>
           <address class="footer-address">
             <ul class="list">
@@ -455,26 +484,22 @@
             <li>
               <a href="" class="footer-social__link"
                 ><svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-instagram"></use></svg></a>
             </li>
             <li>
               <a href="" class="footer-social__link"
                 ><svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-twitter"></use></svg></a>
             </li>
             <li>
               <a href="" class="footer-social__link"
                 ><svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-facebook"></use></svg></a>
             </li>
             <li>
               <a href="" class="footer-social__link"
                 ><svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
             </li>
           </ul>
         </div>
@@ -489,12 +514,14 @@
               id="mail"
               placeholder="E-mail"
             />
-            <button class="subscribe__button" type="button">
-              Підписатися
-              <svg class="subscribe__icon" width="24" height="24">
+            <div class="subscribe-button">
+              <button class="subscribe-button__button" type="button">
+                Підписатися
+                <svg class="subscribe-button__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>

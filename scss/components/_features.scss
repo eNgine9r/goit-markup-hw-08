@@ -6,10 +6,12 @@
     @include for-phone-only{
         display: block;
     }
-    @include for-desktop-up{
+
+    @include for-tablet-portrait-up {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
     }
 }
 
@@ -24,7 +26,7 @@
 }
 
 .feature__icon {
-    width: 270px;
+    width: 354px;
     height: 120px;
     margin-bottom: 30px;
     display: inline-flex;
@@ -35,16 +37,22 @@
     @include for-phone-only{
         width: 100%;
     }
+    @include for-desktop-up {
+        width: 270px;
+    }
 }
 
 
 .feature__text {
-    width: 270px;
+    width: 354px;
     color: var(--priamary-text-color);
     font-size: 14px;
     line-height: 1.71;
     @include for-phone-only{
         width: 100%;
+    }
+    @include for-desktop-up {
+        width: 270px;
     }
 }
 

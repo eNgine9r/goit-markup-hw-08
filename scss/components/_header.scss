@@ -15,7 +15,6 @@
     }
 }
 
-
 @include for-tablet-portrait-up {}
 
 .logo__text {
@@ -91,6 +90,7 @@
 		display: none;
 	}
     @include for-tablet-portrait-up {
+        margin-left: 87px;
         display: block;
     }
     @include for-desktop-up {
@@ -99,17 +99,20 @@
     }
 }
 
+
+
 .header-address__item {
+    @include for-tablet-portrait-up {
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
     @include for-desktop-up {
         margin-right: 50px;
     }
     
-}
-
-.header-address__item{
-    &:last-child{
-        margin-right: 0px;
-    }
 }
 
 .header-address__link {
@@ -123,8 +126,6 @@
 
     @include for-tablet-portrait-up {
         display: block;
-        margin-left: 96px;
-        margin-bottom: 10px;
     }
 
     @include for-desktop-up {
@@ -141,6 +142,7 @@
 
 .header-address__icon {
     fill: currentColor;
+    margin-right: 8px;
 }
 
 .header-address__link {
