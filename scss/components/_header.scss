@@ -8,6 +8,7 @@
 }
 
 .header__container {
+    position: relative;
     display: flex;
     align-items: center;
     @include for-phone-only {

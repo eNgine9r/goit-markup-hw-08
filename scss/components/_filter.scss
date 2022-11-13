@@ -1,12 +1,31 @@
-.filter {
+.filter{
+    @include for-phone-only{
+        width: 326px;
+    }
+}
+
+.filter__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 50px;
+    @include for-phone-only {
+        align-content: space-between;
+        margin-bottom: 40px;
+    }
+    @include for-tablet-portrait-up{
+        justify-content: center;
+    }
+
 }
 
 .filter__item {
     margin-right: 8px;
+    @include for-phone-only {
+        margin-bottom: 15px;
+        &:nth-child(n + 4){
+            margin-bottom: 0;
+        }
+    }
 }
 
 .filter__item{

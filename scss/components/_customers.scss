@@ -1,9 +1,10 @@
 .customers {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    @include for-phone-only{
-        flex-wrap: wrap;
+    @include for-desktop-up{
+        flex-wrap: nowrap;
     }
 }
 
@@ -12,6 +13,7 @@
     @include for-phone-only{
         width: calc((100% - 30px) / 2);
     }
+    
 }
 
 .customers__link {

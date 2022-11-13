@@ -9,10 +9,19 @@
 }
 
 .section__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
+
+    @include for-desktop-up{
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        color: var(--title-text-color);
+    }
 }
