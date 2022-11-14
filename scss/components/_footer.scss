@@ -30,6 +30,7 @@
     }
     @include for-desktop-up {
         text-align: start;
+        margin-bottom: 0;
         margin-right: 70px;
     }
 }
