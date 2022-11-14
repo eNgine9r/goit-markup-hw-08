@@ -14,9 +14,15 @@
 .overlay {
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi){
+        background-image: url(../images/hero-background-img@2x.jpg);
+    }
+
     @include for-phone-only{
         width: 480px;
         height: 400px;
@@ -28,7 +34,7 @@
     }
 
     @include for-desktop-up{
-        min-width: 1600px;
+        width: auto;
         height: 600px;
     }
 }

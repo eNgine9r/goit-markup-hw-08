@@ -237,6 +237,7 @@
           <ul class="works-list list">
             <li class="works-list__item">
               <img
+                srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
                 src="./images/box1.jpg"
                 alt="Працюємо над симатичним та якісним кодом сайтів"
                 width="370"
@@ -246,13 +247,23 @@
               </div>
             </li>
             <li class="works-list__item">
-              <img src="./images/box2.jpg" alt="Створюємо мобільні застосунки" width="370" />
+              <img
+                srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                src="./images/box2.jpg"
+                alt="Створюємо мобільні застосунки"
+                width="370"
+              />
               <div class="works-label">
                 <p class="works-label__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="works-list__item">
-              <img src="./images/box3.jpg" alt="Розробляємо дизайн сайтів" width="370" />
+              <img
+                srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                src="./images/box3.jpg"
+                alt="Розробляємо дизайн сайтів"
+                width="370"
+              />
               <div class="works-label">
                 <p class="works-label__text">Дизайнерські рішення</p>
               </div>
@@ -265,11 +276,19 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-card list">
             <li class="team-card__item">
-              <img
-                src="./images/teamcard1.jpg"
-                alt="Ігор Дем'яненко на посаді Product Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard1mobile.jpg 1x, ./images/teamcard1mobile@2x.jpg 2x"
+                  src="./images/teamcard1mobile.jpg"
+                />
+                <img
+                  srcset="./images/teamcard1.jpg 1x, ./images/teamcard1@2x.jpg 2x"
+                  src="./images/teamcard1.jpg"
+                  alt="Ігор Дем'яненко на посаді Product Designer"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__label">
                 <h3 class="team-card__title">Ігор Дем'яненко</h3>
                 <p class="team-card__text">Product Designer</p>
@@ -306,11 +325,19 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img
-                src="./images/teamcard2.jpg"
-                alt="Ольга Рєпіна на посаді Frontend Developer"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard2mobile.jpg 1x, ./images/teamcard2mobile@2x.jpg 2x"
+                  src="./images/teamcard2mobile.jpg"
+                />
+                <img
+                  srcset="./images/teamcard2.jpg 1x, ./images/teamcard2@2x.jpg 2x"
+                  src="./images/teamcard2.jpg"
+                  alt="Ольга Рєпіна на посаді Frontend Developer"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__label">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -347,11 +374,19 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img
-                src="./images/teamcard3.jpg"
-                alt="Микола Тарасов на посаді Marketing"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard3mobile.jpg 1x, ./images/teamcard3mobile@2x.jpg 2x"
+                  src="./images/teamcard3mobile.jpg"
+                />
+                <img
+                  srcset="./images/teamcard3.jpg 1x, ./images/teamcard3@2x.jpg 2x"
+                  src="./images/teamcard3.jpg"
+                  alt="Микола Тарасов на посаді Marketing"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__label">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -388,11 +423,19 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img
-                src="./images/teamcard4.jpg"
-                alt="Михайло Єрмаков на посаді UI Designer"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard4mobile.jpg 1x, ./images/teamcard4mobile@2x.jpg 2x"
+                  src="./images/teamcard4mobile.jpg"
+                />
+                <img
+                  srcset="./images/teamcard4.jpg 1x, ./images/teamcard4@2x.jpg 2x"
+                  src="./images/teamcard4.jpg"
+                  alt="Михайло Єрмаков на посаді UI Designer"
+                  width="450"
+                />
+              </picture>
               <div class="team-card__label">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p class="team-card__text">UI Designer</p>
