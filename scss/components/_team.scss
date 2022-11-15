@@ -17,10 +17,6 @@
 
     @include for-phone-only{
         width: 100%;
-        margin-bottom: 30px;
-        &:last-child {
-            margin-bottom: 0px;
-        }
     }
 
     @include for-tablet-portrait-up {
